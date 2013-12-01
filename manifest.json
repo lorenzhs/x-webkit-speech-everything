@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "x-webkit-speech everything",
+  "description": "This extension enables speech input on any <input> field.",
+  "version": "1.0",
+  "author": "Lorenz H-S",
+  "homepage_url": "http://github.com/lorenzhs/x-webkit-speech-everything",
+
+  "content_scripts" : [
+    {
+      "matches": ["*://*/*"],
+      "js": ["insert.js"]
+    }
+  ]
+}
